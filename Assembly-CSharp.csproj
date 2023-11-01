@@ -49,47 +49,73 @@
      <Compile Include="Assets\_Scripts\Depth_ScreenToWorldPosition.cs" />
      <Folder Include="Assets" />
      <Folder Include="Assets\UnityXRContent\ARFoundation\SimulationEnvironments\Office\Prefab" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
+     <Folder Include="Assets\TextMesh Pro\Sprites" />
      <Folder Include="Assets\UnityXRContent\ARFoundation\SimulationEnvironments\Factory" />
+     <Folder Include="Assets\TextMesh Pro\Resources\Sprite Assets" />
      <Folder Include="Assets\UnityXRContent\ARFoundation\SimulationEnvironments\Backyard" />
      <Folder Include="Assets\UnityXRContent" />
      <Folder Include="Assets\UnityXRContent\ARFoundation\SimulationEnvironments\Factory\Prefab" />
      <Folder Include="Assets\UnityXRContent\Common\ReferenceShapes\Materials" />
      <Folder Include="Assets\UnityXRContent\ARFoundation\SimulationEnvironments\Common\Prefab\Custom" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
      <Folder Include="Assets\UnityXRContent\ARFoundation\SimulationEnvironments\Bedroom\Models" />
      <Folder Include="Assets\UnityXRContent\ARFoundation\SimulationEnvironments\Backyard\Models" />
      <Folder Include="Assets\UnityXRContent\Common\ReferenceShapes\Models" />
+     <Folder Include="Assets\LightshipHUB" />
      <Folder Include="Assets\XR\Resources" />
+     <Folder Include="Assets\TextMesh Pro\Resources\Fonts &amp; Materials" />
      <Folder Include="Assets\UnityXRContent\ARFoundation\SimulationEnvironments\DiningRoom\Prefab" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
      <Folder Include="Assets\UnityXRContent\ARFoundation\SimulationEnvironments\LivingRoom\Prefab" />
      <Folder Include="Assets\UnityXRContent\ARFoundation\SimulationEnvironments\Park\Prefab\Custom" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
+     <Folder Include="Assets\TextMesh Pro\Resources" />
      <Folder Include="Assets\UnityXRContent\Common\ReferenceImages" />
      <Folder Include="Assets\UnityXRContent\ARFoundation\SimulationEnvironments\Billboard" />
      <Folder Include="Assets\UnityXRContent\Common\ReferenceShapes" />
      <Folder Include="Assets\UnityXRContent\ARFoundation\SimulationEnvironments\Common\Prefab" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
      <Folder Include="Assets\UnityXRContent\ARFoundation\SimulationEnvironments\LivingRoom\Models" />
+     <Folder Include="Assets\TextMesh Pro" />
      <Folder Include="Assets\UnityXRContent\ARFoundation\SimulationEnvironments\Kitchen\Models" />
      <Folder Include="Assets\UnityXRContent\ARFoundation\SimulationEnvironments\Bedroom\Prefab" />
      <Folder Include="Assets\UnityXRContent\ARFoundation\SimulationEnvironments\Backyard\Prefab" />
      <Folder Include="Assets\UnityXRContent\ARFoundation\SimulationEnvironments\Bedroom\Playable" />
      <Folder Include="Assets\XR" />
      <Folder Include="Assets\UnityXRContent\Common\ReferenceShapes\Prefab" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
+     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
      <Folder Include="Assets\UnityXRContent\ARFoundation\SimulationEnvironments\Factory\Models" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
      <Folder Include="Assets\XR\UserSimulationSettings\Resources" />
      <Folder Include="Assets\UnityXRContent\ARFoundation\SimulationEnvironments\Museum\Models" />
      <Folder Include="Assets\UnityXRContent\ARFoundation\SimulationEnvironments\Kitchen" />
      <Folder Include="Assets\XR\Settings" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
      <Folder Include="Assets\UnityXRContent\ARFoundation\SimulationEnvironments\Common\Materials" />
+     <Folder Include="Assets\Materials" />
+     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
      <Folder Include="Assets\UnityXRContent\ARFoundation\SimulationEnvironments\Park\Models" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
+     <Folder Include="Assets\TextMesh Pro\Shaders" />
      <Folder Include="Assets\UnityXRContent\ARFoundation\SimulationEnvironments\Park\Prefab" />
      <Folder Include="Assets\UnityXRContent\ARFoundation\SimulationEnvironments\DiningRoom\Prefab\Custom" />
      <Folder Include="Assets\UnityXRContent\ARFoundation\SimulationEnvironments\Common\Models" />
      <Folder Include="Assets\UnityXRContent\ARFoundation\SimulationEnvironments\Billboard\Models" />
+     <Folder Include="Assets\TextMesh Pro\Resources\Style Sheets" />
+     <Folder Include="Assets\TextMesh Pro\Fonts" />
      <Folder Include="Assets\UnityXRContent\ARFoundation" />
+     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
      <Folder Include="Assets\UnityXRContent\ARFoundation\SimulationEnvironments\LivingRoom" />
      <Folder Include="Assets\UnityXRContent\ARFoundation\SimulationEnvironments\LivingRoom\Prefab\Custom" />
      <Folder Include="Assets\UnityXRContent\ARFoundation\SimulationEnvironments\Office" />
      <Folder Include="Assets\UnityXRContent\ARFoundation\SimulationEnvironments\Office\Models" />
      <Folder Include="Assets\UnityXRContent\ARFoundation\SimulationEnvironments\Kitchen\Prefab" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
      <Folder Include="Assets\UnityXRContent\Common\ReferenceObjects" />
      <Folder Include="Assets\UnityXRContent\ARFoundation\SimulationEnvironments\DiningRoom\Models" />
      <Folder Include="Assets\UnityXRContent\ARFoundation\SimulationEnvironments\Bedroom" />
@@ -98,18 +124,25 @@
      <Folder Include="Assets\UnityXRContent\ARFoundation\SimulationEnvironments\Park" />
      <Folder Include="Assets\UnityXRContent\ARFoundation\SimulationEnvironments\PostProcessing" />
      <Folder Include="Assets\UnityXRContent\Common\ReferenceObjects\Models" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
      <Folder Include="Assets\UnityXRContent\Common" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
      <Folder Include="Assets\_Scenes" />
      <Folder Include="Assets\Prefabs" />
+     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
      <Folder Include="Assets\UnityXRContent\ARFoundation\SimulationEnvironments\Backyard\Prefab\Custom" />
+     <Folder Include="Assets\TextMesh Pro\Documentation" />
      <Folder Include="Assets\UnityXRContent\ARFoundation\SimulationEnvironments\Museum\Prefab" />
      <Folder Include="Assets\UnityXRContent\ARFoundation\SimulationEnvironments" />
      <Folder Include="Assets\UnityXRContent\ARFoundation\SimulationEnvironments\Billboard\Prefab" />
      <Folder Include="Assets\UnityXRContent\ARFoundation\SimulationEnvironments\Common" />
      <Folder Include="Assets\XR\UserSimulationSettings" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
      <Folder Include="Assets\_Scripts" />
      <Folder Include="Assets\XR\Loaders" />
      <Folder Include="Assets\UnityXRContent\ARFoundation\SimulationEnvironments\DiningRoom" />
+     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne.json" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
      <Reference Include="UnityEngine">
      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.10f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
      </Reference>
@@ -758,6 +791,9 @@
      <Reference Include="Unity.XR.ARCore">
      <HintPath>C:\Users\obaheti\IMTC Lab3\Library\ScriptAssemblies\Unity.XR.ARCore.dll</HintPath>
      </Reference>
+     <Reference Include="Unity.2D.Sprite.Editor">
+     <HintPath>C:\Users\obaheti\IMTC Lab3\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
+     </Reference>
      <Reference Include="Unity.VisualScripting.Flow">
      <HintPath>C:\Users\obaheti\IMTC Lab3\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
      </Reference>
@@ -898,6 +934,9 @@
      </Reference>
      <Reference Include="Unity.XR.ARFoundation.InternalUtils">
      <HintPath>C:\Users\obaheti\IMTC Lab3\Library\ScriptAssemblies\Unity.XR.ARFoundation.InternalUtils.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Mobile.AndroidLogcat.Editor">
+     <HintPath>C:\Users\obaheti\IMTC Lab3\Library\ScriptAssemblies\Unity.Mobile.AndroidLogcat.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Mathematics">
      <HintPath>C:\Users\obaheti\IMTC Lab3\Library\ScriptAssemblies\Unity.Mathematics.dll</HintPath>

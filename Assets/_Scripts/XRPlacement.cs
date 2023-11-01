@@ -2,55 +2,99 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.Serialization;
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
 
 public class XRPlacement : MonoBehaviour
 {
-    [SerializeField] private GameObject spawnPrefab;
-    
+    [SerializeField] private List<GameObject> spawnPrefabs;
+    [SerializeField] private List<GameObject> imageSpawnPrefab;
+    [SerializeField] private GameObject cursor;
+    [SerializeField] private Vector3 offset;
     private ARRaycastManager raycastManager;
-    private List<GameObject> spawnedPrefabs;
+    private ARTrackedImageManager trackImageManager;
+    private List<GameObject> spawnedPrefabs = new List<GameObject>();
+    private Pose cursorPose;
+    private Vector2 screenCenter;
+    private bool isSpawnMidAir;
+    private bool imagePrefabVisibility;
+    private Camera mainCamera;
+    private GameObject trackedGameObject;
 
     private void Start()
     {
         raycastManager = GetComponent<ARRaycastManager>();
+        trackImageManager = GetComponent<ARTrackedImageManager>();
+        mainCamera = Camera.main;
     }
+    
+
 
     private void Update()
     {
-        #if UNITY_EDITOR
-
-        if (Input.GetMouseButtonDown(0))
-        {
-            Vector2 mousePos = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
-            ARRayCasting(mousePos);
-        }
-        
-        #elif UNITY_ANDROID 
-        
-        if(Input.touchCount > 0)
-        {
-            Touch touch = Input.GetTouch(0);
-            Vector2 touchPosition = touch.position;
-            ARRayCasting(touchPosition);
-        }
-        
-        #endif
+        screenCenter = Camera.main.ViewportToScreenPoint(new Vector3(.5f, .5f));
+        Debug.Log(screenCenter);
+        cursorPose = ARRayCasting(screenCenter);
+        UpdateCursorPosition(cursorPose);
     }
 
-    private void ARRayCasting(Vector2 pos)
+    private void UpdateCursorPosition(Pose currentPose)
+    {
+        cursor.transform.position = currentPose.position;
+        //cursor.transform.rotation = currentPose.rotation;
+    }
+
+    private Pose ARRayCasting(Vector2 pos)
     {
         List<ARRaycastHit> hits = new();
-        if (raycastManager.Raycast(pos, hits, TrackableType.PlaneEstimated))
+        raycastManager.Raycast(pos, hits, TrackableType.Planes);
+        if (hits.Count>0)
         {
-            Pose spawnPose = hits[0].pose;
-            SpawnAR(spawnPose);
+            UpdateCursorPosition(hits[0].pose);
+            return hits[0].pose;
+        }
+        return cursorPose;
+    }
+
+    public void SpawnAR(int currentIndex)
+    {
+        GameObject instantiatedObject;
+        if (isSpawnMidAir)
+        {
+            Vector3 spawnPosition = mainCamera.transform.position + mainCamera.transform.forward.normalized * 1f ;
+            instantiatedObject = Instantiate(spawnPrefabs[currentIndex], spawnPosition, Quaternion.identity);
+        }
+        else
+        {
+            instantiatedObject = Instantiate(spawnPrefabs[currentIndex], cursorPose.position, cursorPose.rotation);
+        }
+
+        instantiatedObject.transform.forward = -mainCamera.transform.forward;
+        spawnedPrefabs.Add(instantiatedObject);
+        
+    }
+
+    public void HideAllObjects()
+    {
+        foreach (GameObject spawn in spawnedPrefabs)
+        {
+            spawn.SetActive(!spawn.activeSelf);
         }
     }
 
-    private void SpawnAR(Pose pose)
+    public void ToggleImage()
     {
-        GameObject instantiatedObject = Instantiate(spawnPrefab, pose.position, pose.rotation);
+        if (trackedGameObject == null)
+        {
+            trackedGameObject = GameObject.FindWithTag("Respawn").gameObject;
+        }
+        trackedGameObject.SetActive(imagePrefabVisibility);
+        imagePrefabVisibility = !imagePrefabVisibility;
+    }
+
+    public void ChangeBool(bool isTrue)
+    {
+        isSpawnMidAir = isTrue;
     }
 }
