@@ -3,7 +3,7 @@
     "m_SelectedPackage": {
         "deviceId": "479b30ad",
         "name": "com.DefaultCompany.IMTCLab3",
-        "processId": 4637,
+        "processId": 7221,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -12,6 +12,24 @@
             "deviceId": "479b30ad",
             "name": "com.DefaultCompany.IMTCLab3",
             "processId": 4637,
+            "exited": false
+        },
+        {
+            "deviceId": "479b30ad",
+            "name": "com.DefaultCompany.IMTCLab3",
+            "processId": 5377,
+            "exited": false
+        },
+        {
+            "deviceId": "479b30ad",
+            "name": "com.DefaultCompany.IMTCLab3",
+            "processId": 6462,
+            "exited": false
+        },
+        {
+            "deviceId": "479b30ad",
+            "name": "com.DefaultCompany.IMTCLab3",
+            "processId": 7221,
             "exited": false
         }
     ],

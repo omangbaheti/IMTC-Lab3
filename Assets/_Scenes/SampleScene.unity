@@ -832,30 +832,29 @@ MonoBehaviour:
     <color=blue><i>Press the buttons
     to interact with the AR objects:</i></color>
 
-    <b><color=green>1. Spawn Objects
-    at Cursor:</color></b>
+    <b><color=green>1. Spawn Chicken/Dragon:</color></b>
 
-    Tap these buttons to create objects where the animated
-    cursor is pointing.
+    Tap
+    these buttons to create a Chicken/Dragon
 
-    <b><color=green>2. Spawn Objects in Mid-Air:</color></b>
+    <b><color=green>2. Spawn Objects
+    in Air:</color></b>
 
-    These
-    buttons will create objects right in front of your camera.
+    These buttons will create objects right in front of
+    your camera.
 
-    <b><color=green>3.
-    Show/Hide Objects:</color></b>
+    <b><color=green>3. Spawn Objects on Ground:</color></b>
 
-    Use this option to toggle the visibility
-    of all spawned objects.
+    Use
+    this button to spawn objects on Cursor.
 
-    <b><color=green>4. Show/Hide Image-Tracking Object:</color></b>
+    <b><color=green>4. Show/Hide Image-Tracking
+    Object:</color></b>
 
-    Activate
-    or deactivate an object that follows a recognized image.
+    Activate or deactivate an object that follows a QR
+    Code.
 
-    <color=blue><i>Remember
-    to explore and have fun with the AR experience!</i></color>'
+    <color=blue><i>Remember to explore and have fun with the AR experience!</i></color>'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
